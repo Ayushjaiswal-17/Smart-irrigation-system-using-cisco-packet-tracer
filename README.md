@@ -12,16 +12,12 @@ To create an automated irrigation system that turns sprinklers ON/OFF based on m
 - All devices are connected to a central Home Gateway.
 - A Smartphone is optionally used for remote monitoring/control.
 
-![Circuit Diagram](./circuit-diagram/smart_irrigation_system.png)
+## Circuit Diagram
+![image](https://github.com/user-attachments/assets/e0d3173a-21ad-4424-a4b8-ee7f992c3d07)
+
 
 ## 🧠 Logic Used
-If water level is below threshold (e.g., < 14), turn on sprinklers.
-```javascript
-function loop() {
-    var moisture = analogRead(1);
-    if (moisture < 14) {
-        digitalWrite(2, HIGH); // Turn on sprinkler
-    } else {
-        digitalWrite(2, LOW); // Turn off sprinkler
-    }
-}
+If water level is below threshold (e.g., < 5), turn on sprinklers.
+![image](https://github.com/user-attachments/assets/af4dc0b1-00a9-4aee-8c9b-dde6de90302b)
+
+
